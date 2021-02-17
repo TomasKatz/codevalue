@@ -1,0 +1,18 @@
+
+<ng-container *ngIf="listItems">
+  <div class="justifyCenter">
+    <div class="leftPane">
+      <app-filtered-list
+        [dataList]="listItems"
+        (deleteClick)="reportDelete($event)"
+        (itemClick)="notifyItemClick($event)">
+
+      </app-filtered-list>
+    </div>
+    <div class="rightPane">
+      <app-editable-datapanel [dataItem]="currentItem">
+
+      </app-editable-datapanel>
+    </div>
+  </div>
+</ng-container>

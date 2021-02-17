@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+.justifyCenter{
+  justify-content: center; display: flex; flex-direction: row;
+}
+.justifyEnd{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+.flexWrap
+{
+  flex-wrap:  wrap;
+}
+.elipsis{white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.example-header-image {
+  background-image: url(https://material.angular.io/assets/img/examples/shiba1.jpg);
+  background-size: cover;
+}

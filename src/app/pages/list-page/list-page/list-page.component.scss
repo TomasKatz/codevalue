@@ -1,0 +1,15 @@
+:host{
+  .leftPane{
+    flex-grow: 1;
+    overflow: scroll;
+  }
+  .rightPane {
+    flex-grow: 3;
+    overflow: scroll;
+
+  }
+  .leftPane, .rightPane {
+    height: 100vh;
+    border: 1px solid;
+  }
+}
