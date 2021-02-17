@@ -34,7 +34,7 @@ export class EditableDatapanelComponent implements OnInit, OnChanges {
         formObj[key] = [this.dataItem[key], []];
       }
     }
-    this.formGroup = this.fb.group(formObj);
-    this.cdr.detectChanges();
+    // this.formGroup = this.fb.group(formObj);
+    // this.cdr.detectChanges();
   }
 }
