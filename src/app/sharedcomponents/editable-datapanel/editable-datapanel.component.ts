@@ -16,17 +16,11 @@ export class EditableDatapanelComponent implements OnInit, OnChanges {
     private fb: FormBuilder
   ) { }
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes.dataItem){
-
+    if (changes.dataItem && !changes.dataItem.firstChange){
       this.getFormGroup();
     }
   }
-  ngOnInit(): void {
-    this.formGroup = this.fb.group({
-      name: [''],
-      description: ['']
-    });
-  }
+  ngOnInit(): void {}
   getFormGroup(): void{
     const formObj = {};
     for (const key in this.dataItem){
@@ -34,7 +28,6 @@ export class EditableDatapanelComponent implements OnInit, OnChanges {
         formObj[key] = [this.dataItem[key], []];
       }
     }
-    // this.formGroup = this.fb.group(formObj);
-    // this.cdr.detectChanges();
+    this.formGroup = this.fb.group(formObj);
   }
 }

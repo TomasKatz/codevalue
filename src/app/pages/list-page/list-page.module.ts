@@ -4,7 +4,6 @@ import { ListPageComponent } from './list-page/list-page.component';
 import {FilteredlistModule} from '../../sharedcomponents/filteredlist/filteredlist.module';
 import {EditableDatapanelModule} from '../../sharedcomponents/editable-datapanel/editable-datapanel.module';
 
-
 @NgModule({
   declarations: [ListPageComponent],
   imports: [

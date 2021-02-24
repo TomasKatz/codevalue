@@ -6,6 +6,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [EditableDatapanelComponent],
@@ -18,7 +19,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     MatButtonModule,
     MatFormFieldModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatInputModule
   ]
 })
 export class EditableDatapanelModule { }
